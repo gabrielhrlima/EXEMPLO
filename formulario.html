@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <h1>Formularios</h1>
+    <br />
+    <hr />
+    <form>
+      <!-- Entradas -->
+      <h3>Inputs</h3>
+      <!-- Legenda para nome -->
+      <label for="NOME">Nome:</label>
+      <!-- campo para nome -->
+      <input id="NOME" type="text" placeholder="digite seu nome" required />
+      <br />
+      <label for="SOBRENOME">Sobrenome:</label>
+      <input
+        id="SOBRENOME"
+        type="text"
+        placeholder="digite seu sobrenome"
+        required
+      />
+      <br />
+      <label for="senha">Senha:</label>
+      <input
+        id="senha"
+        type="password"
+        placeholder="digite sua senha"
+        required
+      />
+      <br />
+      <label for="email">Email:</label>
+      <input id="email" type="email" placeholder="digite seu email" required />
+      <br />
+      <hr />
+      <h2>Animal de Estimação</h2>
+      <!-- Selecionar uma opção -->
+      <h4>radio</h4>
+      <input type="radio" id="dog" name="animal" value="Cachorro" />
+      <label for="dog">Cachorro</label><br />
+      <input type="radio" id="cat" name="animal" value="Gato" />
+      <label for="cat">Gato</label><br />
+      <input type="radio" id="fish" name="animal" value="Peixe" />
+      <label for="fish">Peixe</label><br />
+      <input type="radio" id="duck" name="animal" value="Pato" />
+      <label for="duck">Pato</label><br />
+      <h2>Itens Casa</h2>
+      <!-- Selecionar mais de uma opção -->
+      <h4>checkbox</h4>
+      <input type="checkbox" id="item1" name="item1" value="TV" />
+      <label for="item1">TV</label><br />
+      <input type="checkbox" id="item2" name="item2" value="Cadeira" />
+      <label for="item2">Cadeira</label><br />
+      <input type="checkbox" id="item3" name="item3" value="Mesa" />
+      <label for="item3">Mesa</label><br />
+      <input type="checkbox" id="item4" name="item4" value="Sofá" />
+      <label for="item4">Sofá</label><br />
+
+      <!-- Select -->
+      <hr />
+      <h2>Escolha uma cor</h2>
+      <select name="cores" id="cor">
+        <option disabled selected="">Selcione uma cor</option>
+        <option value="Vermelho">Vermelho</option>
+        <option value="Azul">Azul</option>
+        <option value="Amarelo">Amarelo</option>
+        <option value="Verde">Verde</option>
+        <option value="Roxo">Roxo</option>
+      </select>
+
+      <br />
+      <hr />
+      <!-- Area para mensagens grandes -->
+      <h2>Digite sua mensagem</h2>
+      <textarea name="mendagem" id="mensagem" cols="60" rows="10">
+Informe sua mensagem</textarea
+      >
+
+      <br /><br />
+      <input type="submit" value="Enviar formulario" />
+      <hr />
+    </form>
+
+    <a href="../teste0/index.html">Voltar a pagina principal</a>
+    <hr />
+  </body>
+</html>
